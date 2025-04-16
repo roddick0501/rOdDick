@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/logo.jpg" class="logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hi, I'm <span>Roddick</span><br />from Accra</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/about.jpg" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I’m not a passionate developer, but with experience in frontend technologies like HTML, CSS, JavaScript, and React. I love sleeping, building clean and responsive web applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <img src="image/service1.jpg" alt="Service 1" />
+          <h2>Web Design</h2>
+          <p>Modern, user-focused designs that are responsive and engaging.</p>
+        </div>
+        <div>
+          <img src="image/service2.jpg" alt="Service 2" />
+          <h2>Web Development</h2>
+          <p>Building fast, dynamic websites using clean code and modern frameworks.</p>
+        </div>
+        <div>
+          <img src="image/service3.jpg" alt="Service 3" />
+          <h2>SEO Optimization</h2>
+          <p>Optimized web pages to boost your visibility and search rankings.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="image/project1.jpg" />
+          <div class="layer">
+            <h3>Landing Page</h3>
+            <p>A clean product landing page built with HTML/CSS</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/project2.jpg" />
+          <div class="layer">
+            <h3>Portfolio Website</h3>
+            <p>Responsive personal portfolio using HTML, CSS, JS</p>
+          </div>
+        </div>
+        <div class="work">
+          <img src="image/project3.jpg" />
+          <div class="layer">
+            <h3>Blog Platform</h3>
+            <p>Blog site with login and posting features using React</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h1 class="sub-title">Contact Me</h1>
+      <p>Email: dadzieroddick@gmail.com</p>
+      <p>Phone: +233 596 886 58</p>
+    </div>
+  </section>
+
+  <script>
+    const sidemenu = document.getElementById("sidemenu");
+    function openMenu() {
+      sidemenu.style.right = "0";
+    }
+    function closeMenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+</body>
+</html>
